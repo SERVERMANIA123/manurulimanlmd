@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrasah Aliyah Nurul Iman Leuwimunding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Madrasah Aliyah Nurul Iman Leuwimunding</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Selamat Datang di MANI Leuwimunding</h2>
+        <p>Madrasah Aliyah Nurul Iman Leuwimunding berkomitmen untuk pendidikan berkualitas dengan nilai-nilai Islam.</p>
+        <img src="placeholder-logo.jpg" alt="Logo Sekolah" width="200">
+    </section>
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Deskripsi singkat tentang sejarah, visi, misi, dan program sekolah. Tambahkan lebih banyak detail di sini.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery">
+            <img src="placeholder1.jpg" alt="Kegiatan 1" onclick="showImage(this)">
+            <img src="placeholder2.jpg" alt="Kegiatan 2" onclick="showImage(this)">
+            <img src="placeholder3.jpg" alt="Kegiatan 3" onclick="showImage(this)">
+        </div>
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="response"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Madrasah Aliyah Nurul Iman Leuwimunding. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
